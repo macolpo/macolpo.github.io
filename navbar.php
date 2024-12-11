@@ -1,23 +1,3 @@
-<?php
-// index.php
-
-// Get the requested URL path (e.g., /project)
-$request = trim($_SERVER['REQUEST_URI'], '/');
-
-// Match the requested route and include the appropriate PHP file
-switch ($request) {
-    case 'project':
-        include 'project.php';  // Load project.php
-        break;
-
-    case 'about':
-        include 'about.php';  // Load about.php if requested
-        break;
-
-}
-?>
-
-
 <nav class="navbar navbar-expand-lg sticky-top p-3" id="navbar">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">Portfolio</a>
