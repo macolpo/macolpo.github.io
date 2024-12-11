@@ -26,7 +26,6 @@ h2:before{
     bottom: -6px;
     width: 130px;
     height: 2px;
-    background: rgb(208, 227, 253);
+    background: rgb(37, 121, 239);
     transform:translateX(-65px) /*    width/2    */
 }
-
