@@ -43,9 +43,6 @@
               <li class="nav-item">
                 <a class="nav-link fw-semi" href="project.html">Project</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link fw-semi" href="#">Contact</a>
-              </li>
             </ul>
 
             <!-- links -->
@@ -65,31 +62,84 @@
     <!-- project -->
 
     <section>
-      <div class="py-3 bg-primary-subtle">
-        <div class="text-center py-5" data-aos="fade-up">
-          <h2 class="title fw-semi">PROJECT</h2>
+      <div class="py-3">
+        <div class="text-center py-5">
+          <h2 class="title fw-semi">Project</h2>
         </div>
       </div>
       <!-- content -->
-      <div>
-        hi
+      <div class="container py-3">
+
+      <!-- capstone -->
+      <a type="button" class="text-decoration-none" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          <div class="card mb-3" style="max-width: 100%;">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="img/thesis.png" class="img-fluid w-100">
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title text-info">ERP Software for SOS Children’s Village</h5>
+                  <p class="card-text">A comprehensive ERP system with online donation capabilities, tailored for managing multiple branches and enhancing organizational efficiency.</p>
+                  <p class="card-text"><span class="text-secondary fw-semi">Technologies:</span> PHP MYSQL BOOTSTRAP JQUERY</p>
+                </div>
+              </div>
+            </div>
+          </div>
+      </a>
+
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content bg-transparent border border-0">
+            <div class="modal-header border border-0">
+              <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+              <a type="button" class="btn-close btn-white" data-bs-dismiss="modal" aria-label="Close"></a>
+            </div>
+            <div class="modal-body">
+              <div class="d-flex justify-content-center">
+                <div id="carouselExampleIndicators" class="carousel slide">
+                  <div class="carousel-indicators" id="carousel-indicators">
+                    <!-- Buttons will be dynamically added here -->
+                  </div>
+                  <div class="carousel-inner" id="carousel-items">
+                    <!-- Carousel items (images) will be dynamically added here -->
+                  </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                  
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
 
-
+      <!-- dj -->
+      <div class="card mb-3" style="max-width: 100%;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="img/djmed.png" class="img-fluid w-100">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title text-info">DJ Medical and Laboratory Supplies Online Shop</h5>
+              <p class="card-text">An e-commerce platform for ordering medical supplies online, featuring secure payment using Paymongo processing and order tracking.</p>
+              <p class="card-text"><span class="text-secondary fw-semi">Technologies:</span> PHP MYSQL BOOTSTRAP JQUERY</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        
+      </div>
     </section>
-
-    
-     
-   
-
-
-
-
-
-
-
-
-
 
 
     <!-- bootstrap js -->
@@ -112,6 +162,46 @@
                 navbar.removeClass('shadow-sm bg-white');
             }
         });
+
+
+      // carousel
+      const carouselItems = document.getElementById("carousel-items");
+      const carouselIndicators = document.getElementById("carousel-indicators");
+
+      for (let i = 0; i < 18; i++) {
+        
+        const carouselItem = document.createElement("div");
+        carouselItem.classList.add("carousel-item"); 
+
+        // Make the first carousel item active
+        if (i === 0) {
+          carouselItem.classList.add("active");
+        }
+
+        const img = document.createElement("img");
+        img.src = `img/capstone/${i}.png`; 
+        img.classList.add("d-block", "w-100"); 
+        img.alt = `Slide ${i + 1}`;  
+
+        carouselItem.appendChild(img);
+
+        carouselItems.appendChild(carouselItem);
+
+        const button = document.createElement("button");
+        button.type = "button";
+        button.setAttribute("data-bs-target", "#carouselExampleIndicators");
+        button.setAttribute("data-bs-slide-to", i); 
+        button.setAttribute("aria-label", `Slide ${i + 1}`);  
+
+        // Make the first button active
+        if (i === 0) {
+          button.classList.add("active");
+          button.setAttribute("aria-current", "true");  
+        }
+
+        carouselIndicators.appendChild(button);
+      }
+
 
       
     });
