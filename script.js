@@ -47,7 +47,7 @@ $(document).ready(function() {
       carouselItem.classList.add("carousel-item"); // Correct class
 
       // Set the first item as active
-      if (i === 0) {
+      if (i === 1) {
         carouselItem.classList.add("active");
       }
 
