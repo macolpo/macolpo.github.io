@@ -22,8 +22,8 @@
   <body>
 
     <!-- navb -->
-    <nav class="navbar navbar-expand-lg sticky-top p-3" id="navbar">
-      <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg sticky-top p-3 bg-white border-bottom">
+      <div class="container">
         <a class="navbar-brand" href="#">Portfolio</a>
         <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
           <i class="bi bi-list"></i>
@@ -38,10 +38,10 @@
           <div class="offcanvas-body">
             <ul class="navbar-nav m-auto gap-3">
               <li class="nav-item">
-                <a class="nav-link fw-semi" href="#">Home</a>
+                <a class="nav-link fw-semi active" href="#">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semi" href="#about">About</a>
+                <a class="nav-link fw-semi" href="experience.html">Experience</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link fw-semi" href="project.html">Project</a>
@@ -85,12 +85,8 @@
     </div>
   </section>
 
-
-
-
-
   <!-- about -->
-  <section class="py-5" id="about">
+  <section class="py-5" >
     <div class="container py-5">
       <div class="text-center py-5" data-aos="fade-down">
         <h2 class="title fw-semi">About Me</h2>
@@ -108,6 +104,9 @@
               I'm a graduate of the <a href="https://ncst.edu.ph/">National College of Science and Technology</a>  with a Bachelor's degree in Information Technology.
               I am passionate about developing innovative solutions and have experience in various programming languages and frameworks.
               I was also honored with the award for Best in Thesis for my capstone project.
+
+            </p>
+            <p>
               During my internship at HRWeb Inc,
               I contributed to developing, assisted in database management, and collaborated with teams to improve system performance and user experience. This experience enhanced my problem-solving skills and allowed me to apply my technical knowledge in a real-world environment. 
               I am eager to continue growing as a software developer and work on projects that make a meaningful impact.
@@ -195,22 +194,12 @@
     </div>
   </section>
 
-  
-    <!-- project -->
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <footer>
+      <div class="bg-dark p-3 text-light text-center">
+          <p>&copy; Michael Robert Dellosa</p>
+      </div>
+  </footer>
 
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"crossorigin="anonymous"></script>
@@ -219,22 +208,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-    <script>
-      $(document).ready(function() {
-        AOS.init();
-
-        var navbar = $('#navbar');
-
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 0) {
-                navbar.addClass('shadow-sm bg-white');
-            } else {
-                navbar.removeClass('shadow-sm bg-white');
-            }
-        });
-
-      
-    });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>

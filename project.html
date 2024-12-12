@@ -22,9 +22,9 @@
   <body>
 
     <!-- navb -->
-    <nav class="navbar navbar-expand-lg sticky-top p-3" id="navbar">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">Portfolio</a>
+    <nav class="navbar navbar-expand-lg sticky-top p-3 bg-white border-bottom">
+      <div class="container">
+        <a class="navbar-brand" href="#">Portfolio</a>
         <button class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
           <i class="bi bi-list"></i>
         </button>
@@ -41,10 +41,10 @@
                 <a class="nav-link fw-semi" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semi" href="index.html#about">About</a>
+                <a class="nav-link fw-semi" href="experience.html">Experience</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-semi" href="project.html">Project</a>
+                <a class="nav-link fw-semi active" href="project.html">Project</a>
               </li>
             </ul>
 
@@ -65,9 +65,9 @@
     <!-- project -->
 
     <section>
-      <div class="py-3">
+      <div class="py-5 bg-dark bg-gradient">
         <div class="text-center py-5">
-          <h2 class="title fw-semi">Project</h2>
+          <h2 class="title fw-bold text-light">Project</h2>
         </div>
       </div>
       <!-- content -->
@@ -145,6 +145,12 @@
     </section>
 
 
+    <footer>
+        <div class="bg-dark p-3 text-light text-center">
+            <p>&copy; Michael Robert Dellosa</p>
+        </div>
+    </footer>
+
     <!-- bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
@@ -152,62 +158,6 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 
-    <script>
-      $(document).ready(function() {
-        AOS.init();
-
-        var navbar = $('#navbar');
-
-        $(window).scroll(function() {
-            if ($(this).scrollTop() > 0) {
-                navbar.addClass('shadow-sm bg-white');
-            } else {
-                navbar.removeClass('shadow-sm bg-white');
-            }
-        });
-
-
-      // carousel
-      const carouselItems = document.getElementById("carousel-items");
-      const carouselIndicators = document.getElementById("carousel-indicators");
-
-      for (let i = 0; i < 18; i++) {
-        
-        const carouselItem = document.createElement("div");
-        carouselItem.classList.add("carousel-item"); 
-
-        // Make the first carousel item active
-        if (i === 0) {
-          carouselItem.classList.add("active");
-        }
-
-        const img = document.createElement("img");
-        img.src = `img/capstone/${i}.png`; 
-        img.classList.add("d-block", "w-100"); 
-        img.alt = `Slide ${i + 1}`;  
-
-        carouselItem.appendChild(img);
-
-        carouselItems.appendChild(carouselItem);
-
-        const button = document.createElement("button");
-        button.type = "button";
-        button.setAttribute("data-bs-target", "#carouselExampleIndicators");
-        button.setAttribute("data-bs-slide-to", i); 
-        button.setAttribute("aria-label", `Slide ${i + 1}`);  
-
-        // Make the first button active
-        if (i === 0) {
-          button.classList.add("active");
-          button.setAttribute("aria-current", "true");  
-        }
-
-        carouselIndicators.appendChild(button);
-      }
-
-
-      
-    });
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
