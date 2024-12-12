@@ -42,37 +42,38 @@ $(document).ready(function() {
     const carouselItemsdj = document.getElementById("carousel-itemsdj");
     const carouselIndicatorsdj = document.getElementById("carousel-indicatorsdj");
 
-    for (let i = 0; i < 22; i++) {
+    for (let i = 0; i < 21; i++) {
       const carouselItem = document.createElement("div");
-      carouselItem.classList.add("carousel-item"); // Correct class
+      carouselItem.classList.add("carousel-item");
 
-      // Set the first item as active
-      if (i === 1) {
+      if (i === 0) {
         carouselItem.classList.add("active");
       }
 
       const img = document.createElement("img");
-      img.src = `img/dj/${i}.png`; 
-      img.classList.add("d-block", "w-100"); 
-      img.alt = `Slide ${i + 1}`;
+      img.src = `img/dj/${i + 1}.png`; 
+      img.classList.add("d-block", "w-100");
+      img.alt = `Slide ${i + 1}`; 
 
       carouselItem.appendChild(img);
 
       carouselItemsdj.appendChild(carouselItem);
 
+      // Create carousel indicator button
       const button = document.createElement("button");
       button.type = "button";
       button.setAttribute("data-bs-target", "#carouselExampleIndicatorsdj");
-      button.setAttribute("data-bs-slide-to", i); 
+      button.setAttribute("data-bs-slide-to", i);
       button.setAttribute("aria-label", `Slide ${i + 1}`);
 
       if (i === 0) {
         button.classList.add("active");
-        button.setAttribute("aria-current", "true"); 
+        button.setAttribute("aria-current", "true");
       }
 
       carouselIndicatorsdj.appendChild(button);
     }
+
 
      
 
