@@ -22,7 +22,19 @@ font-weight:bold;
     border-radius: 10px; 
 }
 
+.wavy-image {
+    clip-path: xywh(0 1px 95% 95% round 60% 0);
+    object-fit: cover;
+    border-radius: 10px; 
+}
 
+.wavy-image-t {
+    clip-path: ellipse(230px 250px at 25% 40%);
+    object-fit: cover;
+    border-radius: 10px; 
+}
+  
+    
 h2 {
     position: relative;
     text-align: center;
