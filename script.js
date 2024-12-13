@@ -5,7 +5,7 @@ $(document).ready(function() {
     const carouselItems = document.getElementById("carousel-items");
     const carouselIndicators = document.getElementById("carousel-indicators");
 
-    for (let i = 0; i < 18; i++) {
+    for (let i = 0; i < 19; i++) {
        
       const carouselItem = document.createElement("div");
       carouselItem.classList.add("carousel-item"); 
