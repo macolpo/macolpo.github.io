@@ -24,7 +24,7 @@ font-weight:bold;
 }
 
 .wavy-image {
-    clip-path: xywh(0 1px 95% 95% round 60% 0);
+    clip-path: xywh(0px 1px 100% 100% round 60% 0);
     object-fit: cover;
     border-radius: 10px; 
 }
