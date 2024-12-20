@@ -1,6 +1,17 @@
 $(document).ready(function() {
     AOS.init();
 
+
+    var navbar = $('#navbar');
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 0) {
+            navbar.removeClass('bg-transparent').addClass('bg-white shadow');
+        } else {
+            navbar.removeClass('bg-white shadow').addClass('bg-transparent');
+        }
+    });
+
+       
     // carousel
     const carouselItems = document.getElementById("carousel-items");
     const carouselIndicators = document.getElementById("carousel-indicators");
