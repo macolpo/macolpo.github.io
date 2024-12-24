@@ -88,39 +88,6 @@ h2:before {
     background: rgb(37, 121, 239);
     transform: translateX(-50%); /* Center the line */
 }
-
-/* experience */
-.note-card {
-  position: relative;
-  padding-left: 40px;
-}
-
-.note-card::before {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: -10px;
-  width: 0;
-  height: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
-  border-right: 10px solid #fff; 
-  z-index: 1;
-}
-
-.note-card::after {
-  content: '';
-  position: absolute;
-  top: 10px;
-  left: -11px;
-  width: 0;
-  height: 0;
-  border-top: 11px solid transparent;
-  border-bottom: 11px solid transparent;
-  border-right: 11px solid rgba(0, 0, 0, 0.125);
-  z-index: 0;
-}
-
 /* projects */
 
 /* Change the icon background color */

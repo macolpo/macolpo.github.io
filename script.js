@@ -11,8 +11,19 @@ $(document).ready(function() {
         }
     });
 
+
+    var menuIcon = $('#menu-icon');
+    var offcanvas = $('#offcanvasLeft');
+
+    offcanvas.on('shown.bs.offcanvas hidden.bs.offcanvas', function() {
+      if (offcanvas.hasClass('show')) {
+        menuIcon.removeClass('bi-list').addClass('bi-list-nested');
+    } else {
+        menuIcon.removeClass('bi-list-nested').addClass('bi-list');
+    }
+    });
        
-    // carousel
+    //  carousel
     const carouselItems = document.getElementById("carousel-items");
     const carouselIndicators = document.getElementById("carousel-indicators");
 
