@@ -10,7 +10,7 @@ margin: 0;
 font-family: "Poppins", sans-serif; 
 }
 #navbar{
-  transition: all ease-in-out 0.5s;
+  transition: all ease-in-out 0.3s;
 }
 .navbar-nav .nav-item .nav-link.active {
 color: skyblue;
@@ -83,7 +83,7 @@ h2:before {
     position: absolute;
     left: 50%;
     bottom: -9px;
-    width: 150px;
+    width: 75px;
     height: 2px;
     background: rgb(37, 121, 239);
     transform: translateX(-50%); /* Center the line */
