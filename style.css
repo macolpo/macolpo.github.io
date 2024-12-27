@@ -72,6 +72,11 @@ font-weight:bold;
     height: 100%; 
 }
 
+.img-hover-zoom {
+  height: 300px; 
+  overflow: hidden; 
+}
+
     
 h2 {
     position: relative;
@@ -89,6 +94,14 @@ h2:before {
     transform: translateX(-50%); /* Center the line */
 }
 /* projects */
+
+.img-hover-zoom img {
+  transition: transform .6s ease;
+}
+
+.img-hover-zoom:hover img {
+  transform: scale(1.2);
+}
 
 /* Change the icon background color */
 .carousel-control-prev-icon, .carousel-control-next-icon {
