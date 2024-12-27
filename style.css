@@ -43,22 +43,26 @@ color: skyblue;
   background: skyblue;
 }
 
-
-
-#me {
-  position: relative;
-}
-
-#me::before {
-  content: '';
+.custom-shape-divider-bottom-1735304966 {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
-  background-color: skyblue;
-  clip-path: polygon(100% 0, 0 100%, 100% 100%);
-  z-index: 0;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1735304966 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 500px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1735304966 .shape-fill {
+  fill: #8ED1FC;
 }
 
 .wavy-image {
@@ -90,6 +94,33 @@ h2:before {
     height: 2px;
     background: rgb(37, 121, 239);
     transform: translateX(-50%); /* Center the line */
+}
+
+/* exp */
+
+.custom-shape-divider-bottom-1735305290 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.custom-shape-divider-bottom-1735305290 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 227px;
+  transform: rotateY(180deg);
+}
+
+.custom-shape-divider-bottom-1735305290 .shape-fill {
+  fill: #8ED1FC;
+}
+
+.custom-shape-divider-bottom-1735304707 .shape-fill {
+  fill: #8ED1FC;
 }
 /* projects */
 
