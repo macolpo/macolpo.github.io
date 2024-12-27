@@ -9,22 +9,42 @@ padding: 0;
 margin: 0;
 font-family: "Poppins", sans-serif; 
 }
+
 #navbar{
   transition: all ease-in-out 0.3s;
 }
+.navbar-nav .nav-item .nav-link {
+position: relative;
+}
 .navbar-nav .nav-item .nav-link.active {
+font-weight: bold;
 color: skyblue;
-font-weight:bold;
 }
 .nav-link:hover {
-    background-color: whitesmoke;
+    color: skyblue;
     transition: ease-in-out .3s;
-    border-radius: 10px; 
 }
-.nav-link:active{
-    background-color: whitesmoke;
-    border-radius: 10px; 
+/* animate */
+.navbar-nav .nav-item .nav-link::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  right: 0;
+  background: skyblue;
+  transition: width 0.3s ease-in-out;
+  -webkit-transition: width 0.3s ease-in-out;
 }
+
+.navbar-nav .nav-item .nav-link:hover::after {
+  width: 100%;
+  left: 0;
+  background: skyblue;
+}
+
+
 
 #me {
   position: relative;
@@ -72,11 +92,6 @@ font-weight:bold;
     height: 100%; 
 }
 
-.img-hover-zoom {
-  height: 300px; 
-  overflow: hidden; 
-}
-
     
 h2 {
     position: relative;
@@ -102,6 +117,13 @@ h2:before {
 .img-hover-zoom:hover img {
   transform: scale(1.2);
 }
+
+
+.img-hover-zoom {
+  height: 300px; 
+  overflow: hidden; 
+}
+
 
 /* Change the icon background color */
 .carousel-control-prev-icon, .carousel-control-next-icon {
