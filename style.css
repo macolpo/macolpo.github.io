@@ -102,6 +102,7 @@ h2:before {
   background-image: url("img/exp-bg.png");
   background-repeat: no-repeat;
   background-size: 50% 100%;
+  background-attachment: fixed;
 }
 
 
