@@ -132,38 +132,66 @@ h2:before {
 }
 
 /* Education Chat Bubble */
-.chat-bubble {
+.timeline {
   position: relative;
-  padding: 20px;
-  margin: 15px 0;
-  max-width: 75%; /* Controls the width of the chat bubble */
-  border-radius: 12px; /* Rounded corners */
-  transition:all ease-in-out .3s;
+  margin: 0 auto;
+  padding: 20px 0;
+  width: 100%;
 }
 
-/* Chat bubble arrow */
+.timeline::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  width: 4px;
+  background: #32b3e5;
+  transform: translateX(-50%);
+}
+
+.timeline-item {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+}
+
+.timeline-item:nth-child(odd) {
+  left: 0;
+  text-align: left;
+}
+
+.timeline-item:nth-child(even) {
+  left: 50%;
+  text-align: left;
+}
+
+.chat-bubble {
+  position: relative;
+  padding: 15px;
+  margin: 10px 0;
+  border-radius: 12px;
+  background-color: #ffff;
+  color: #333;
+}
+
 .chat-bubble::after {
   content: '';
   position: absolute;
   border-style: solid;
-  border-width: 12px 12px 12px 0;
-  border-color: transparent #32b3e5 transparent transparent;
-  left: -12px;
-  top: 20px;
-  z-index: 1;
+  border-width: 8px 8px 8px 0;
+  border-color: transparent #ffff transparent transparent;
+  left: -8px;
+  top: 10px;
 }
 
-/* Hover effect for better interactivity */
-.chat-bubble:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+.timeline-item:nth-child(odd) .chat-bubble::after {
+  left: auto;
+  right: -8px;
+  border-width: 8px 0 8px 8px;
+  border-color: transparent transparent transparent #ffff;
 }
 
-/* Optional text formatting */
-.chat-bubble p {
-  margin: 0;
-  line-height: 1.5; /* Adds space between lines of text */
-}
 
 
 
