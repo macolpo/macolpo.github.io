@@ -2,6 +2,7 @@
 
 html, body {
 scroll-behavior: smooth;
+background-color: #F4F7F7;
 }
 * {
 padding: 0;
@@ -43,7 +44,7 @@ color: skyblue;
   background: skyblue;
 }
 
-.custom-shape-divider-bottom-1735304966 {
+.custom-shape-divider-bottom-me {
   position: absolute;
   bottom: 0;
   left: 0;
@@ -53,7 +54,7 @@ color: skyblue;
   transform: rotate(180deg);
 }
 
-.custom-shape-divider-bottom-1735304966 svg {
+.custom-shape-divider-bottom-me svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
@@ -61,8 +62,8 @@ color: skyblue;
   transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1735304966 .shape-fill {
-  fill: #8ED1FC;
+.custom-shape-divider-bottom-me .shape-fill {
+  fill: #9AA6B2;
 }
 
 .wavy-image {
@@ -97,6 +98,12 @@ h2:before {
 }
 
 /* exp */
+#experience {
+  background-image: url("img/exp-bg.png");
+  background-repeat: no-repeat;
+  background-size: 50% 100%;
+}
+
 
 .custom-shape-divider-bottom-1735305290 {
   position: absolute;
@@ -122,6 +129,43 @@ h2:before {
 .custom-shape-divider-bottom-1735304707 .shape-fill {
   fill: #8ED1FC;
 }
+
+/* Education Chat Bubble */
+.chat-bubble {
+  position: relative;
+  padding: 20px;
+  margin: 15px 0;
+  max-width: 75%; /* Controls the width of the chat bubble */
+  border-radius: 12px; /* Rounded corners */
+  transition:all ease-in-out .3s;
+}
+
+/* Chat bubble arrow */
+.chat-bubble::after {
+  content: '';
+  position: absolute;
+  border-style: solid;
+  border-width: 12px 12px 12px 0;
+  border-color: transparent #32b3e5 transparent transparent;
+  left: -12px;
+  top: 20px;
+  z-index: 1;
+}
+
+/* Hover effect for better interactivity */
+.chat-bubble:hover {
+  transform: translateY(-5px); /* Slight lift on hover */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.15); /* Enhance shadow on hover */
+}
+
+/* Optional text formatting */
+.chat-bubble p {
+  margin: 0;
+  line-height: 1.5; /* Adds space between lines of text */
+}
+
+
+
 /* projects */
 
 .img-hover-zoom img {

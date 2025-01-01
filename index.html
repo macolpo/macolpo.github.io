@@ -21,54 +21,57 @@
 
     <title>Michael Robert Dellosa - Portfolio</title>
   </head>
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#navbar" data-offset="0">
 
-    <!-- navb -->
-    <nav class="navbar navbar-expand-lg sticky-top p-3 bg-transparent" id="navbar">
-      <div class="container">
-        <a href="#" class="navbar-brand">MRD</a>
-        <a class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
-          <i class="bi bi-list" id="menu-icon"></i>
-        </a>
+  <!-- navb -->
+  <nav class="navbar navbar-expand-lg sticky-top p-3 bg-transparent" id="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">MRD</a>
+      <a class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+        <i class="bi bi-list" id="menu-icon"></i>
+      </a>
 
-        <!-- Offcanvas Menu -->
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
-          <div class="offcanvas-header">
-            <h5 id="offcanvasLeftLabel">Details</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav m-auto gap-3">
-              <li class="nav-item">
-                <a class="nav-link fw-semi active" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-semi" href="experience.html">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-semi" href="project.html">Project</a>
-              </li>
-            </ul>
+      <!-- Offcanvas Menu -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasLeftLabel">Details</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav m-auto gap-3">
+            <li class="nav-item">
+              <a class="nav-link fw-semi active" href="#" id="home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semi" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semi" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-semi" href="project.html">Project</a>
+            </li>
+          </ul>
 
-            <!-- links -->
-            <div class="py-3">
-              <div class="d-flex gap-3">
-                <a href="https://www.facebook.com/macolpo" target="_blank" class="hvr-grow-rotate"><img class="img-fluid" width="25px" src="img/fb.jpg" alt=""></a>
-                <a href="https://github.com/macolpo" target="_blank" class="hvr-grow-rotate"><img class="img-fluid" width="25px" src="img/github.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/michael-robert-dellosa-208129300/" target="_blank" class="hvr-grow-rotate"><img class="img-fluid" width="25px" src="img/linkin.png" alt=""></a>
-              </div>
+          <!-- links -->
+          <div class="py-3">
+            <div class="d-flex gap-3">
+              <a href="https://www.facebook.com/macolpo" target="_blank" class="hvr-grow-rotate"><img class="img-fluid" width="25px" src="img/fb.jpg" alt=""></a>
+              <a href="https://github.com/macolpo" target="_blank" class="hvr-grow-rotate"><img class="img-fluid" width="25px" src="img/github.png" alt=""></a>
+              <a href="https://www.linkedin.com/in/michael-robert-dellosa-208129300/" target="_blank" class="hvr-grow-rotate"><img class="img-fluid" width="25px" src="img/linkin.png" alt=""></a>
             </div>
           </div>
         </div>
-
-
       </div>
-    </nav>
+
+
+    </div>
+  </nav>
 
 
   <!-- me -->
   <section class="py-5 position-relative">
-    <div class="custom-shape-divider-bottom-1735304966">
+    <div class="custom-shape-divider-bottom-me">
         <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
             <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
         </svg>
@@ -99,7 +102,7 @@
   </section>
 
   <!-- about -->
-  <section class="py-5" >
+  <section class="py-3" >
     <div class="container py-5">
       <div class="text-center py-5" data-aos="fade-down" data-aos-duration="2000">
         <h2 class="title fw-bold">About Me</h2>
@@ -287,6 +290,106 @@
       </div>
     </div>
   </section>
+
+
+  <!-- experience -->
+  <section class="py-5" id="experience">
+    <div class="container py-5">
+      <div class="row py-5">
+          <div class="text-center py-5" data-aos="fade-down" data-aos-duration="2000">
+            <h2 class="title fw-bold">Experience</h2>
+          </div>
+          <div class="container py-5">
+          <!-- Experience 1 -->
+          <div class="row mb-5" data-aos="fade-up" data-aos-duration="1500">
+            <div class="col-12">
+              <div class="d-flex align-items-start gap-3">
+                <div class="col-sm-2 col-md-2 d-none d-md-block">
+                  <p class="mb-0 fw-bold">HRWEB INC.</p>
+                  <p class="text-white fw-semi">Apr 2024 - July 2024</p>
+                </div>
+                <div class="border-start border-secondary col-sm-10 ps-3">
+                  <h4 class="fw-bold text-primary">WEB DEVELOPER INTERN</h4>
+                  <div class="d-lg-none d-md-none">
+                    <p class="mb-0 fw-bold">HRWEB INC.</p>
+                    <p class="text-white fw-semi">Apr 2024 - July 2024</p>
+                  </div>
+                  <p class="text-muted">
+                    Assisted in coding and maintaining front-end and back-end features of their in-house system using HTML, CSS, JavaScript, and PHP CodeIgniter.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Experience 2 -->
+          <div class="row" data-aos="fade-up" data-aos-duration="3000">
+            <div class="col-12">
+              <div class="d-flex align-items-start gap-3">
+                <div class="col-sm-2 col-md-2 d-none d-md-block">
+                  <p class="mb-0 fw-bold">IT PRIME SOLUTIONS PROVIDER CORP</p>
+                  <p class="text-white fw-semi">Sept 2024 - Nov 2024</p>
+                </div>
+                <div class="border-start border-secondary col-sm-10 ps-3">
+                  <h4 class="fw-bold text-primary">QA TESTER SUPPORT SPECIALIST</h4>
+                  <div class="d-lg-none d-md-none">
+                    <p class="mb-0 fw-bold">IT PRIME SOLUTIONS PROVIDER CORP</p>
+                    <p class="text-white fw-semi">Sept 2024 - Nov 2024</p>
+                  </div>
+                  <p class="text-muted">
+                    Collaborated with developers to track and resolve defects. Recorded issues and worked with developers to fix them.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          </div>
+        
+      </div>
+    </div>
+  </section>
+
+  <section class="py-5" id="education">
+    <div class="container py-5">
+      <div class="row py-5">
+        <div class="text-center py-5" data-aos="fade-up" data-aos-duration="2000">
+          <h2 class="title fw-bold">Education</h2>
+        </div>
+
+        <div class="container">
+          <div class="border-start border-info-subtle border-5">
+            <div class="d-flex justify-content-center">
+              <div class="row justify-content-center">
+  
+                <div class="shadow-lg chat-bubble" data-aos="fade-right" data-aos-duration="2000">
+                  <div class="card-body">
+                    <h5 class="fw-bold">NATIONAL COLLEGE OF SCIENCE AND TECHNOLOGY</h5>
+                    <h6 class="card-text mb-2 text-body-secondary"><small>BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</small></h6>
+                    <h6 class="card-text mb-2 text-body-secondary"><small>2019 - 2024</small></h6>
+                  </div>
+                </div>
+    
+                <div class="shadow-lg chat-bubble" data-aos="fade-right" data-aos-duration="3000">
+                  <div class="card-body">
+                    <h5 class="fw-bold">ASIAN INSTITUTE oF SCIENCE AND TECHNOLOGY</h5>
+                    <h6 class="card-text mb-2 text-body-secondary"><small>INFORMATION AND COMMUNICATION TECHNOLOGY (ICT-TVL)</small></h6>
+                    <h6 class="card-text mb-2 text-body-secondary"><small>2017 - 2019</small></h6>
+                  </div>
+                </div>
+  
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+          
+      </div>
+    </div>
+  </section>
+
+ 
+  
 
 
   <footer>
