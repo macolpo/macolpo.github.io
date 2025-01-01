@@ -8,7 +8,6 @@ $(document).ready(function() {
             navbar.removeClass('bg-transparent').addClass('bg-white shadow');
         } else {
             navbar.removeClass('bg-white shadow').addClass('bg-transparent');
-            $('#home').addClass('active')
         }
     });
 
