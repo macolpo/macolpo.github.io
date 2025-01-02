@@ -106,33 +106,8 @@ h2:before {
 }
 
 
-.custom-shape-divider-bottom-1735305290 {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-}
-
-.custom-shape-divider-bottom-1735305290 svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 227px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-1735305290 .shape-fill {
-  fill: #8ED1FC;
-}
-
-.custom-shape-divider-bottom-1735304707 .shape-fill {
-  fill: #8ED1FC;
-}
-
 /* Education Chat Bubble */
-.timeline {
+/* .timeline {
   position: relative;
   margin: 0 auto;
   padding: 20px 0;
@@ -148,7 +123,7 @@ h2:before {
   width: 4px;
   background: #32b3e5;
   transform: translateX(-50%);
-}
+} */
 
 .timeline-item {
   position: relative;
@@ -191,8 +166,27 @@ h2:before {
   border-width: 8px 0 8px 8px;
   border-color: transparent transparent transparent #ffff;
 }
+.custom-shape-divider-bottom-edu {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
 
+.custom-shape-divider-bottom-edu svg {
+  position: relative;
+  display: block;
+  width: calc(300% + 1.3px);
+  height: 700px;
+  transform: rotateY(180deg);
+}
 
+.custom-shape-divider-bottom-edu .shape-fill {
+  fill: #9AA6B2;
+}
 
 
 /* projects */
