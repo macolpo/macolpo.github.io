@@ -10,39 +10,39 @@ margin: 0;
 font-family: "Poppins", sans-serif; 
 }
 
-#navbar{
-  transition: all ease-in-out 0.3s;
+#navbar {
+  transition: all 0.3s ease-in-out;
 }
+
 .navbar-nav .nav-item .nav-link {
-position: relative;
+  position: relative; 
+  display: inline-block;
 }
+
 .navbar-nav .nav-item .nav-link.active {
-font-weight: bold;
-color: skyblue;
+  font-weight: bold;
+  color: skyblue;
 }
+
 .nav-link:hover {
-    color: skyblue;
-    transition: ease-in-out .3s;
+  color: skyblue;
 }
-/* animate */
+
 .navbar-nav .nav-item .nav-link::after {
   content: '';
   position: absolute;
   width: 0;
   height: 2px;
-  display: block;
-  margin-top: 5px;
-  right: 0;
+  bottom: 0;
+  left: 0; 
   background: skyblue;
   transition: width 0.3s ease-in-out;
-  -webkit-transition: width 0.3s ease-in-out;
 }
 
 .navbar-nav .nav-item .nav-link:hover::after {
   width: 100%;
-  left: 0;
-  background: skyblue;
 }
+
 
 .custom-shape-divider-bottom-me {
   position: absolute;
