@@ -38,7 +38,7 @@ $(document).ready(function() {
 
       const img = document.createElement("img");
       img.src = `img/capstone/${i}.png`; 
-      img.classList.add("d-block", "w-75", "mx-auto"); 
+      img.classList.add("d-block", "col-lg-10","col-md-12", "mx-auto"); 
       img.alt = `Slide ${i + 1}`;  
 
       carouselItem.appendChild(img);
@@ -74,7 +74,7 @@ $(document).ready(function() {
 
       const img = document.createElement("img");
       img.src = `img/dj/${i + 1}.png`; 
-      img.classList.add("d-block", "w-75", "mx-auto"); 
+      img.classList.add("d-block", "col-lg-10","col-md-12", "mx-auto"); 
       img.alt = `Slide ${i + 1}`; 
 
       carouselItem.appendChild(img);
