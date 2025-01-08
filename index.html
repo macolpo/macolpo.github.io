@@ -24,7 +24,7 @@
   <body data-bs-spy="scroll" data-bs-target="#navbar" data-offset="0">
 
   <!-- navb -->
-  <nav class="navbar navbar-expand-lg sticky-top p-3 bg-transparent" id="navbar">
+  <nav class="navbar navbar-expand-lg sticky-top p-3" id="navbar">
     <div class="container">
       <a href="#" class="navbar-brand">MRD</a>
       <a class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
@@ -32,9 +32,9 @@
       </a>
 
       <!-- Offcanvas Menu -->
-      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
+      <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
         <div class="offcanvas-header">
-          <h5 id="offcanvasLeftLabel">Details</h5>
+          <h5 id="offcanvasLeftLabel text-dark">Details</h5>
           <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
@@ -52,7 +52,7 @@
               <a class="nav-link fw-semi" href="#education">EDUCATION</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-semi" href="project.html">PROJECT</a>
+              <a class="nav-link fw-semi" href="#project">PROJECT</a>
             </li>
           </ul>
 
@@ -75,11 +75,6 @@
 
   <!-- me -->
   <section class="py-5 position-relative d-flex justify-content-center align-items-center" style="min-height: 50vh;">
-    <div class="custom-shape-divider-bottom-me">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" class="shape-fill"></path>
-        </svg>
-    </div>
     <div class="container">
       <div class="px-3 row">
 
@@ -120,7 +115,7 @@
         </div>
 
         <div class="col-lg-9 mb-3" data-aos="fade-right" data-aos-duration="2000">
-            <h4 class="text-secondary fw-bold">Personal Details</h4>
+            <h4 class=" fw-bold">Personal Details</h4>
             <p>
               I'm a graduate of the <a href="https://ncst.edu.ph/">National College of Science and Technology</a>  with a Bachelor's degree in Information Technology.
               I am passionate about developing innovative solutions and have experience in various programming languages and frameworks.
@@ -158,7 +153,7 @@
       </div>
 
         <div class="py-2">
-          <h4 class="text-secondary fw-bold">Skills </h4>
+          <h4 class=" fw-bold">Skills </h4>
           <p>Programming languages and tools I'm familliar with:</p>
 
           <div class="container" data-aos="fade-up" data-aos-duration="2000">
@@ -299,7 +294,7 @@
 
 
   <!-- experience -->
-  <section class="py-5 bg-light-subtle" id="experience">
+  <section class="py-5-subtle" id="experience">
     <div class="container py-5">
       <div class="row py-5">
           <div class="text-center py-5" data-aos="fade-down" data-aos-duration="2000">
@@ -355,12 +350,8 @@
     </div>
   </section>
 
+  <!-- education -->
   <section class="py-5 position-relative" id="education">
-    <div class="custom-shape-divider-bottom-edu">
-        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M1200 0L0 0 892.25 114.72 1200 0z" class="shape-fill"></path>
-        </svg>
-    </div>
     <div class="container py-5">
       <div class="row py-5">
         <div class="text-center py-5" data-aos="fade-down" data-aos-duration="2000">
@@ -378,7 +369,7 @@
               </div>
             </div>
   
-            <div class="timeline-item mb-5 p-2 hvr-grow-rotate">
+            <div class="timeline-item p-2 hvr-grow-rotate">
               <div class="shadow-lg chat-bubble mb-5" data-aos="fade-up" data-aos-duration="2000">
                 <div class="card-body">
                   <h6 class="fw-bold card-title text-primary-emphasis">ASIAN INSTITUTE OF SCIENCE AND TECHNOLOGY</h6>
@@ -390,6 +381,129 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <!-- project -->
+  <section class="py-5" style="min-height: 30vh;" id="project">
+    
+    <!-- content -->
+    <div class="container py-5">
+      <div class="py-5 d-flex justify-content-center align-items-center" style="min-height: 20vh;">
+        <div class="text-center py-5" data-aos="fade-down" data-aos-duration="2000">
+          <h1 class="title fw-bold">Project</h1>
+        </div>
+      </div>
+
+      <div class=" d-flex justify-content-center align-items-center">
+        <div class="row mb-5">
+          <!-- capstone -->
+          <div class="col-sm-12 mb-3" data-aos="fade-right" data-aos-duration="1500">
+            <a type="button" class="text-decoration-none hvr-glow" data-bs-toggle="modal" data-bs-target="#staticCapstone">
+                <div class="card" style="max-width: 100%;">
+                  <div class="row g-0">
+                    <div class="col-xl-6 col-lg-12 col-md-12 img-hover-zoom">
+                      <img src="img/thesis.png" class="img-fluid w-100">
+                    </div>
+                    <div class="col-xl-6 col-lg-12 col-md-12">
+                      <div class="card-body">
+                        <h5 class="card-title text-primary">ERP Software for SOS Children’s Village</h5>
+                        <p class="card-text "><small>Capstone Project</small></p>
+                        <p class="card-text">A comprehensive ERP system with online donation capabilities, tailored for managing multiple branches and enhancing organizational efficiency.</p>
+                        <p class="card-text"><span class=" fw-semi">Technologies:</span> PHP MYSQL BOOTSTRAP JQUERY</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </a>
+          </div>
+        
+          <!-- capstone  Modal -->
+          <div class="modal fade" id="staticCapstone" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content bg-transparent border border-0">
+                <div class="modal-header border border-0">
+                  <a type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></a>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicators" class="carousel slide">
+                      <div class="carousel-indicators" id="carousel-indicators">
+                        <!-- Buttons will be dynamically added here -->
+                      </div>
+                      <div class="carousel-inner" id="carousel-items">
+                        <!-- Carousel items (images) will be dynamically added here -->
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                      
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- dj -->
+          <div class="col-sm-12 mb-3" data-aos="fade-up" data-aos-duration="3000">
+            <a type="button" class="text-decoration-none hvr-glow" data-bs-toggle="modal" data-bs-target="#statisDj">
+              <div class="card" style="max-width: 100%;">
+                <div class="row g-0">
+                  <div class="col-xl-6 col-lg-12 col-md-12 img-hover-zoom">
+                    <img src="img/djmed.png" class="img-fluid w-100">
+                  </div>
+                  <div class="col-xl-6 col-lg-12 col-md-12">
+                    <div class="card-body">
+                      <h5 class="card-title text-primary">DJ Medical and Laboratory Supplies Online Shop</h5>
+                      <p class="card-text "><small>Commissioned Project</small></p>
+                      <p class="card-text">An e-commerce platform for ordering medical supplies online, featuring secure payment using Paymongo processing and order tracking.</p>
+                      <p class="card-text"><span class=" fw-semi">Technologies:</span> PHP MYSQL BOOTSTRAP JQUERY</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </a>
+          </div>
+          <!-- dj modal -->
+          <div class="modal fade" id="statisDj" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+              <div class="modal-content bg-transparent border border-0">
+                <div class="modal-header border border-0">
+                  <a type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></a>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselExampleIndicatorsdj" class="carousel slide">
+                      <div class="carousel-indicators" id="carousel-indicatorsdj">
+                        <!-- Buttons will be dynamically added here -->
+                      </div>
+                      <div class="carousel-inner" id="carousel-itemsdj">
+                        <!-- Carousel items (images) will be dynamically added here -->
+                      </div>
+                      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsdj" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                      </button>
+                      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsdj" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                      </button>
+                      
+                    </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+        
+      
     </div>
   </section>
 
