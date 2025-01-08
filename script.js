@@ -1,13 +1,14 @@
 $(document).ready(function() {
     AOS.init();
-
+    toggleDarkMode();
+    
 
     var navbar = $('#navbar');
     $(window).scroll(function() {
         if ($(this).scrollTop() > 0) {
-            navbar.removeClass('bg-transparent').addClass('bg-white shadow');
+            navbar.removeClass('bg-transparent').addClass('bg-blur shadow');
         } else {
-            navbar.removeClass('bg-white shadow').addClass('bg-transparent');
+            navbar.removeClass('bg-blur shadow').addClass('bg-transparent');
         }
     });
 
@@ -101,3 +102,17 @@ $(document).ready(function() {
 
   
 });
+
+function toggleDarkMode() {
+  const currentTheme = document.documentElement.getAttribute("data-bs-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  document.documentElement.setAttribute("data-bs-theme", newTheme);
+
+  // Get the image element and change its source based on the theme
+  const icon = document.getElementById("darkmode-icon");
+  if (newTheme === "dark") {
+    icon.src = "img/lightmode.png";
+  } else {
+    icon.src = "img/darkmode.png"; 
+  }
+}

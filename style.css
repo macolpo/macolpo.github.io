@@ -2,13 +2,31 @@
 
 html, body {
 scroll-behavior: smooth;
-background-color: #F4F7F7;
+/* background-color: #F4F7F7; */
 }
 * {
 padding: 0;
 margin: 0;
 font-family: "Poppins", sans-serif; 
 }
+/* dark mode */
+.bg-blur {
+  background: transparent;
+  backdrop-filter: blur(10px);
+}
+
+ /* Light mode styles */
+ [data-bs-theme="light"] {
+  background-color: white;
+  color: black;
+}
+
+/* Dark mode styles */
+[data-bs-theme="dark"] {
+  background-color: #121212;
+  color: white;
+}
+/* end dark mode */
 
 #navbar {
   transition: all 0.3s ease-in-out;
