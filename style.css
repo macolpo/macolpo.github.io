@@ -56,28 +56,6 @@ font-family: "Poppins", sans-serif;
   width: 100%;
 }
 
-.custom-shape-divider-bottom-me {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-me svg {
-  position: relative;
-  display: block;
-  width: calc(100% + 1.3px);
-  height: 500px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-me .shape-fill {
-  fill: #9AA6B2;
-}
-
 .wavy-image {
     clip-path: xywh(0px 1px 100% 100% round 60% 0);
     object-fit: cover;
@@ -153,28 +131,6 @@ h1:before {
   border-width: 8px 0 8px 8px;
   border-color: transparent transparent transparent #ffff;
 }
-.custom-shape-divider-bottom-edu {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  overflow: hidden;
-  line-height: 0;
-  transform: rotate(180deg);
-}
-
-.custom-shape-divider-bottom-edu svg {
-  position: relative;
-  display: block;
-  width: calc(300% + 1.3px);
-  height: 700px;
-  transform: rotateY(180deg);
-}
-
-.custom-shape-divider-bottom-edu .shape-fill {
-  fill: #9AA6B2;
-}
-
 
 /* projects */
 
