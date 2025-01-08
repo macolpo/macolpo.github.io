@@ -17,6 +17,7 @@ font-family: "Poppins", sans-serif;
 .navbar-nav .nav-item .nav-link {
   position: relative; 
   display: inline-block;
+  font-weight:500;
 }
 
 .navbar-nav .nav-item .nav-link.active {
@@ -81,12 +82,12 @@ font-family: "Poppins", sans-serif;
 }
 
     
-h2 {
+h1 {
     position: relative;
     text-align: center;
 }
 
-h2:before {
+h1:before {
     content: '';
     position: absolute;
     left: 50%;
@@ -97,13 +98,6 @@ h2:before {
     transform: translateX(-50%); /* Center the line */
 }
 
-/* exp */
-#experience {
-  background-image: url("img/exp-bg.png");
-  background-repeat: no-repeat;
-  background-size: 50% 100%;
-  background-attachment: fixed;
-}
 
 
 /* Education Chat Bubble */
