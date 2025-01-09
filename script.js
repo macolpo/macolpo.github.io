@@ -1,6 +1,19 @@
 $(document).ready(function() {
     AOS.init();
-    toggleDarkMode();
+    const storedTheme = localStorage.getItem("theme") || "light"; 
+    const $documentElement = $(document.documentElement);
+    const navbar = $('#navbar');
+
+    $documentElement.attr("data-bs-theme", storedTheme);
+
+    theme(storedTheme);
+    $(window).scroll(function() {
+      if ($(this).scrollTop() > 0) {
+        navbar.addClass('shadow-lg');
+      } else {
+        navbar.removeClass('shadow-lg');
+      }
+    });
     
     var menuIcon = $('#menu-icon');
     var offcanvas = $('#offcanvasLeft');
@@ -97,30 +110,24 @@ function toggleDarkMode() {
   const currentTheme = $documentElement.attr("data-bs-theme");
   const newTheme = currentTheme === "dark" ? "light" : "dark";
 
-  // Set the new theme attribute
   $documentElement.attr("data-bs-theme", newTheme);
 
-  // Change the image source based on the new theme
-  const $icon = $("#darkmode-icon");
-  if (newTheme === "dark") {
-    $icon.attr("src", "img/lightmode.png");
-  } else {
-    $icon.attr("src", "img/darkmode.png");
-  }
+  localStorage.setItem("theme", newTheme);
 
-  // Change navbar background color based on the theme
+  // Update the dark mode icon and navbar class
+  theme(newTheme);
+}
+
+function theme(theme) {
+  const icon = $("#darkmode-icon");
   const navbar = $('#navbar');
-  if (newTheme === "dark") {
+
+  // Update the icon based on the theme
+  if (theme === "dark") {
+    icon.attr("src", "img/lightmode.png");
     navbar.removeClass('bg-white').addClass('bg-dark');
   } else {
+    icon.attr("src", "img/darkmode.png");
     navbar.removeClass('bg-dark').addClass('bg-white');
   }
-
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 0) {
-        navbar.addClass('shadow-lg');
-    } else {
-        navbar.removeClass('shadow-lg');
-    }
-});
 }
