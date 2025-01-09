@@ -21,7 +21,7 @@ font-family: "PT Serif", serif;
 
 /* Dark mode styles */
 [data-bs-theme="dark"] {
-  background-color: #121212;
+  background-color: black;
   color: white;
 }
 #navbar {

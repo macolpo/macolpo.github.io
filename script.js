@@ -9,9 +9,9 @@ $(document).ready(function() {
     theme(storedTheme);
     $(window).scroll(function() {
       if ($(this).scrollTop() > 0) {
-        navbar.addClass('shadow-lg bg-gradient');
+        navbar.addClass('shadow-lg ');
       } else {
-        navbar.removeClass('shadow-lg bg-gradient');
+        navbar.removeClass('shadow-lg ');
       }
     });
     
