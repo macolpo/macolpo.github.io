@@ -1,10 +1,10 @@
 $(document).ready(function() {
     AOS.init();
     const storedTheme = localStorage.getItem("theme") || "light"; 
-    const $documentElement = $(document.documentElement);
+    const documentElement = $(document.documentElement);
     const navbar = $('#navbar');
 
-    $documentElement.attr("data-bs-theme", storedTheme);
+    documentElement.attr("data-bs-theme", storedTheme);
 
     theme(storedTheme);
     $(window).scroll(function() {
