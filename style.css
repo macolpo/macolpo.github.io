@@ -45,20 +45,6 @@ font-family: "PT Serif", serif;
   width: 100%;
 }
 
-.wavy-image {
-    clip-path: xywh(0px 1px 100% 100% round 60% 0);
-    object-fit: cover;
-    border-radius: 10px; 
-}
-
-.wavy-image-t {
-    clip-path: ellipse(70% 70% at 25% 40%);
-    object-fit: cover;
-    border-radius: 10px;
-    width: 100%; 
-    height: 100%; 
-}
-
     
 h1 {
     position: relative;
