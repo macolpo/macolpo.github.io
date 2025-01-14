@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
 
     
 
@@ -9,7 +9,7 @@ transition: all 0.3s ease-in-out;
 * {
 padding: 0;
 margin: 0;
-font-family: "PT Serif", serif; 
+font-family: "Varela Round", serif;
 }
 #navbar {
   transition: all 0.3s ease-in-out;
@@ -42,7 +42,7 @@ font-family: "PT Serif", serif;
 }
 
 .navbar-nav .nav-item .nav-link:hover::after {
-  width: 100%;
+  width: 50%;
 }
 
     
@@ -55,11 +55,27 @@ h1:before {
     content: '';
     position: absolute;
     left: 50%;
-    bottom: -9px;
-    width: 75px;
+    bottom: -10px;
+    width: 50px;
     height: 2px;
     background: rgb(37, 121, 239);
     transform: translateX(-50%); /* Center the line */
+}
+
+
+h2 {
+  position: relative;
+}
+
+h2:before {
+  content: '';
+  position: absolute;
+  left: 25px;
+  bottom: -10px;
+  width: 50px;
+  height: 2px;
+  background: rgb(37, 121, 239);
+  transform: translateX(-50%); /* Center the line */
 }
 
 
