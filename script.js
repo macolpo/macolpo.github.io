@@ -125,9 +125,9 @@ function theme(theme) {
   // Update the icon based on the theme
   if (theme === "dark") {
     icon.attr("src", "img/lightmode.png");
-    navbar.removeClass('bg-white').addClass('bg-dark');
+    navbar.removeClass('bg-white').addClass('bg-dark-subtle');
   } else {
     icon.attr("src", "img/darkmode.png");
-    navbar.removeClass('bg-dark').addClass('bg-white');
+    navbar.removeClass('bg-dark-subtle').addClass('bg-white');
   }
 }
