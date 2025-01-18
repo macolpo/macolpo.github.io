@@ -3,6 +3,7 @@ $(document).ready(function() {
     const storedTheme = localStorage.getItem("theme") || "light"; 
     const documentElement = $(document.documentElement);
     const navbar = $('#navbar');
+    const backtotop = $('#backtotop');
 
     documentElement.attr("data-bs-theme", storedTheme);
 
@@ -10,8 +11,10 @@ $(document).ready(function() {
     $(window).scroll(function() {
       if ($(this).scrollTop() > 0) {
         navbar.addClass('shadow-lg ');
+        backtotop.fadeIn();
       } else {
         navbar.removeClass('shadow-lg ');
+        backtotop.fadeOut();
       }
     });
     
