@@ -1,562 +1,363 @@
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
-  <head>
+<html lang="en" >
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Michael Robert Dellosa - Software Developer Portfolio">
     <link rel="icon" href="img/meme.jpg" type="image/gif" sizes="16x16">
-    <!-- jquery -->
+    
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <!-- bootstrap -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
-      crossorigin="anonymous"
-    />
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- css --> 
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 
-    <title>Michael Robert Dellosa - Portfolio</title>
-  </head>
-  <body data-bs-spy="scroll" data-bs-target="#navbar" data-offset="0">
-
-    <!-- navb -->
-    <nav class="navbar navbar-expand-lg sticky-top p-3" id="navbar">
+    <title>Michael Robert Dellosa | Software Developer</title>
+</head>
+<body data-bs-spy="scroll" data-bs-target="#navbar">
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg sticky-top p-3 bg-transparent" id="navbar">
       <div class="container-fluid">
         <a href="" class="navbar-brand">MRD</a>
-        <a class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasLeft" aria-controls="offcanvasLeft">
+        <a class="navbar-toggler border border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
           <i class="bi bi-list" id="menu-icon"></i>
         </a>
 
         <!-- Offcanvas Menu -->
-        <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasLeft" aria-labelledby="offcanvasLeftLabel">
-          <div class="offcanvas-header">
-            <h5 id="offcanvasLeftLabel text-dark">Details</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-          </div>
-          <div class="offcanvas-body">
-            <ul class="navbar-nav m-auto gap-3">
-              <li class="nav-item">
-                <a class="nav-link fw-semi" href="#experience">Experience</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-semi" href="#about">About Me</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link fw-semi" href="#education">Education</a>
-              </li>
-              
-              <li class="nav-item">
-                <a class="nav-link fw-semi" href="#project">Project</a>
-              </li>
-            </ul>
-
-            <!-- links -->
-            <div class="py-3">
-              <div class="d-flex align-items-center gap-3">
-                <a href="https://www.facebook.com/macolpo" target="_blank" class="hvr-grow-rotate"><img class="img-fluid" width="25px" src="img/fb.jpg" alt=""></a>
-                <a href="https://github.com/macolpo" target="_blank" class="hvr-grow-rotate"><img class="img-fluid" width="25px" src="img/github.png" alt=""></a>
-                <a href="https://www.linkedin.com/in/michael-robert-dellosa-208129300/" target="_blank" class="hvr-grow-rotate"><img class="img-fluid" width="25px" src="img/linkin.png" alt=""></a>
-                <a href="javascript:void(0);" class="hvr-grow-rotate" onclick="toggleDarkMode()"><img src="img/darkmode.png" class="img-fluid" width="30px" alt="Darkmode" id="darkmode-icon"></a>
-              </div>
+        <div class="offcanvas offcanvas-start " tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+                <h5 id="offcanvasRightLabel text-dark">Details</h5>
+                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
-          </div>
+            <div class="offcanvas-body">
+                <ul class="navbar-nav m-auto gap-3">
+                <li class="nav-item">
+                    <a class="nav-link fw-semi" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semi" href="#about">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link fw-semi" href="#projects">Projects</a>
+                </li>
+                </ul>
+
+                <!-- links -->
+                <div class="py-3">
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="https://www.facebook.com/macolpo" target="_blank" class="hvr-grow-rotate"><img class="img-fluid" width="25px" src="img/fb.jpg" alt=""></a>
+                        <a href="https://github.com/macolpo" target="_blank" class="hvr-grow-rotate"><img class="img-fluid" width="25px" src="img/github.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/michael-robert-dellosa-208129300/" target="_blank" class="hvr-grow-rotate"><img class="img-fluid" width="25px" src="img/linkin.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
       </div>
     </nav>
 
-
-      
-    <!-- me -->
-    <section class="py-3 d-flex justify-content-center align-items-center" style="min-height: 50vh;">
-      <div class="container py-5">
-        <div class="px-3 mb-3 row">
-
-          <div class="col-lg-7 col-md-12 col-sm-12 d-flex flex-column justify-content-center mb-5 order-2 order-lg-1" data-aos="fade-up" data-aos-duration="3000">
-            <span class="display-6 fw-semibold mb-2">
-                Hi, I'm <span class="text-primary fw-semibold">Michael!</span>
-            </span>
-            <span class="fs-4">
-                An aspirant Software Developer, 24 years old from Dasmariñas City, Cavite, Philippines.
-            </span>
-        
-            <div class="py-3">
-                <a href="img/MICHAEL-ROBERT-DELLOSA-CV.pdf" download="" class="btn bg-secondary-subtle rounded-3 fw-semibold hvr-float">Download CV</a>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-2 order-lg-1" data-aos="fade-right">
+                    <h1 class="display-4 fw-bold mb-3">Hi, I'm <span class="text-gradient">Michael</span></h1>
+                    <p class="lead mb-4">Aspiring Software Developer with experience in web development and quality assurance.</p>
+                    <a href="img/MICHAEL-ROBERT-DELLOSA-CV.pdf" download class="btn btn-primary">Download CV</a>
+                </div>
+                <div class="col-lg-6 text-center  order-1 order-lg-2 " data-aos="fade-right">
+                    <div class="profile-image-wrapper">
+                        <img src="img/mememe.png" alt="Michael Robert Dellosa" class="profile-image">
+                    </div>
+                </div>
             </div>
         </div>
-        
-        <div class="col-lg-5 col-md-12 col-sm-12 text-center order-1 order-lg-2 mb-5" data-aos="fade-down" data-aos-duration="3000">
-          <img src="img/mememe.png" class="img-fluid w-75 rounded-circle " alt="Me Image">
-        </div>
-        
-          
-        </div>
-      </div>
     </section>
 
-    <!-- experience -->
-    <section class="py-3" id="experience">
-      <div class="container">
-        <div class="row py-5">
-          <div class="py-5" data-aos="fade-down" data-aos-duration="2000">
-            <h1 class=" fw-bold">Experience</h1>
-          </div>
-          <div class="mb-5">
-            <div class="row">
-              <!-- second -->
-              <div class="col-lg-6 col-md-12 mb-5" data-aos="fade-right" data-aos-duration="2000">
-                <div class="card border-0 p-md-3 bg-light-subtle shadow-lg hvr-float">
-                  <div class="card-body row">
-                    <div class="col-md-4">
-                      <small class="fw-lighter "><i class="bi bi-calendar me-2"></i>SEPT 2024 - NOV 2024</small>
-                    </div>
-    
-                    <div class="col-md-8">
-                      <h6 class="fw-semibold text-primary-emphasis">QUALITY ASSURANCE TESTER SPECIALIST</h6>
-                      <h6 class="fw-semibold mb-3">IT PRIME SOLUTIONS PROVIDER CORPORATION</h6>
-                      <p class="card-text text-muted">
-                        Collaborated with developers to track and resolve defects. Recorded issues and worked with developers to fix them.
-                      </p>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-              <!-- first -->
-              <div class="col-lg-6 col-md-12 mb-5" data-aos="fade-up" data-aos-duration="2000">
-                <div class="card border-0 p-md-3 bg-light-subtle shadow-lg hvr-float">
-                  <div class="card-body row">
-                    <div class="col-md-4">
-                      <small class="fw-lighter "><i class="bi bi-calendar me-2"></i>APR 2024 - JULY 2024</small>
-                    </div>
-    
-                    <div class="col-md-8">
-                      <h6 class="fw-semibold text-primary-emphasis">JUNIOR PROGRAMMER INTERN</h6>
-                      <h6 class="fw-semibold mb-3">HRWEB INC.</h6>
-                      <p class="card-text text-muted">
-                        Assisted in coding and maintaining front-end and back-end features of their in-house system using HTML, CSS, JavaScript, and PHP CodeIgniter.
-                      </p>
-                    </div>
-                    
-                  </div>
-                </div>
-              </div>
-
+    <!-- Experience Section -->
+    <section id="experience" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>Professional Experience</h2>
+                <p class="text-muted">My work journey so far</p>
             </div>
             
-            
-
-          </div>
-            
-          
-        </div>
-      </div>
-    </section>
-    
-    <!-- about -->
-    <section class="py-3" id="about">
-      <div class="container">
-        <div class="row py-5">
-        <div class="py-5" data-aos="fade-down" data-aos-duration="3000">
-          <h1 class="fw-bold">About Me</h1>
-        </div>
-
-        <div class="px-3 row">
-
-          <div class="col-lg-3 mb-3">
-            <img src="img/togame.jpg" class="img-fluid w-100 rounded-3 shadow" alt="">
-          </div>
-
-          <div class="col-lg-9 mb-3" data-aos="fade-right" data-aos-duration="3000">
-              <h3 class="text-primary-emphasis fw-bold"> Michael Robert Dellosa</h3>
-              <i><p>
-                I'm a graduate of the <a href="https://ncst.edu.ph/">National College of Science and Technology</a>  with a Bachelor's degree in Information Technology.
-                I am passionate about developing innovative solutions and have experience in various programming languages and frameworks.
-                I was also honored with the award for
-                <!-- thesis modal -->
-                <a type="button" class="text-primary" data-bs-toggle="modal" data-bs-target="#thesis">
-                Best in Thesis
-                </a>
-                for my capstone project.
-
-              </p>
-              <p>
-                During my internship at HRWeb Inc,
-                I contributed to developing, assisted in database management, and collaborated with teams to improve system performance and user experience. This experience enhanced my problem-solving skills and allowed me to apply my technical knowledge in a real-world environment. 
-                I am eager to continue growing as a junior programmer and work on projects that make a meaningful impact.
-              </p>
-            </i>
-            
-          </div>
-
-        <!-- thesis modal -->
-        <div class="modal fade" id="thesis" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-          <div class="modal-dialog modal-xl">
-            <div class="modal-content bg-transparent border border-0">
-              <div class="modal-header border border-0">
-                <a type="button" class="btn-close btn-white" data-bs-dismiss="modal" aria-label="Close"></a>
-              </div>
-              <div class="modal-body">
-                <div class="text-center">
-                  <img src="img/reward.png" alt="" class="img-fluid col-lg-10 col-md-12">
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-          <div class="py-2">
-            <h4 class=" fw-bold">Skills </h4>
-            <p>Programming languages and tools I'm familiar with:</p>
-
-            <div class="container" data-aos="fade-up" data-aos-duration="2000">
-
-              <div class="d-flex justify-content-center gap-3 row">
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/html.png" class="img-fluid w-50">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">HTML</p>
-                  </div>
-                </div>
-    
-    
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/css.png" class="img-fluid w-50">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">CSS</p>
-                  </div>
-                </div>
-    
-    
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/javascript.png" class="img-fluid w-50">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">JAVASCRIPT</p>
-                  </div>
-                </div>
-    
-    
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/php.png" class="img-fluid w-50">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">PHP</p>
-                  </div>
-                </div>
-    
-    
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/bootstrap.png" class="img-fluid w-50 mt-3">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">BOOTSTRAP</p>
-                  </div>
-                </div>
-    
-    
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/jquery.png" class="img-fluid w-50">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">JQUERY</p>
-                  </div>
-                </div>
-    
-    
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/mysql.png" class="img-fluid w-50">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">MYSQL</p>
-                  </div>
-                </div>
-    
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/laravel.png" class="img-fluid w-50">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">LARAVEL</p>
-                  </div>
-                </div>
-    
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/codeigniter.png" class="img-fluid w-50">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">CODEIGNITER</p>
-                  </div>
-                </div>
-    
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/postman.png" class="img-fluid w-50">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">POSTMAN</p>
-                  </div>
-                </div>
-    
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/github.png" class="img-fluid w-50">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">GITHUB</p>
-                  </div>
-                </div>
-    
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/git.png" class="img-fluid w-50">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">GIT</p>
-                  </div>
-                </div>
-    
-                <div class="card shadow-sm p-2" style="width: 10rem;">
-                  <div class="d-flex justify-content-center">
-                    <img src="img/powerbi.png" class="img-fluid w-25 mt-4">
-                  </div>
-                  <div class="card-body">
-                    <p class="text-center card-text">POWER BI</p>
-                  </div>
-                </div>
-
-              </div>
-              
-
-            </div>
-          </div>
-        </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- education -->
-    <section class="py-3" id="education">
-      <div class="container py-5">
-          <div class="py-5" data-aos="fade-down" data-aos-duration="2000">
-            <h1 class="fw-bold">Education</h1>
-          </div>
-          <div class="mb-5">
-            <div class="mb-5" data-aos="fade-right" data-aos-duration="3000">
-              <h5 class="fw-semibold card-title text-primary-emphasis">NATIONAL COLLEGE OF SCIENCE AND TECHNOLOGY</h5>
-              <p class="card-subtitle mb-3">BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</p>
-
-              <p class="card-text">
-                During my time at National College of Science and Technology, I pursued a Bachelor of Science in Information Technology, gaining a solid foundation in IT concepts, software development, networking, and problem-solving.
-              </p>
-
-              <p class="card-text"><i class="bi bi-calendar me-2"></i>2019 - 2024</p>
-
-              <hr>
-            </div>
-            <div class="mb-5" data-aos="fade-up" data-aos-duration="3000">
-              <h5 class="fw-semibold card-title text-primary-emphasis">ASIAN INSTITUTE OF SCIENCE AND TECHNOLOGY</h5>
-              <p class="card-subtitle mb-3">INFORMATION AND COMMUNICATION TECHNOLOGY (ICT-TVL)</p>
-
-              <p class="card-text">
-                During my Senior High School years at the Asian Institute of Science and Technology, This program provided me with hands-on experience and a foundational understanding of technology, which further fueled my passion for pursuing a career in IT.
-              </p>
-
-              <p class="card-text"><i class="bi bi-calendar me-2"></i>2017 - 2019</p>
-
-              <hr>
-            </div>
-            
-          </div>
-      </div>
-    </section>
-
-    
-
-    <!-- project -->
-    <section class="py-3" style="min-height: 30vh;" id="project">
-      
-      <!-- content -->
-      <div class="container py-5">
-        <div style="min-height: 20vh;">
-          <div class="text-center py-5" data-aos="fade-down" data-aos-duration="2000">
-            <h1 class="  fw-bold">Project</h1>
-          </div>
-        </div>
-
-        <div class="d-flex justify-content-center">
-          <div class="row justify-content-center mb-5">
-            <!-- capstone -->
-            <div class="col-sm-10 mb-5" data-aos="fade-right" data-aos-duration="1500">
-              <a type="button" class="text-decoration-none hvr-glow" data-bs-toggle="modal" data-bs-target="#staticCapstone">
-                  <div class="card rounded-0 shadow-lg" style="max-width: 100%;">
-                    <div class="row g-0">
-                      <div class="col-xl-6 col-lg-12 col-md-12 img-hover-zoom">
-                        <img src="img/thesis.png" class="img-fluid w-100">
-                      </div>
-                      <div class="col-xl-6 col-lg-12 col-md-12">
-                        <div class="card-body">
-                          <h5 class="card-title text-primary fw-semibold">ERP Software for SOS Children’s Village</h5>
-                          <p class="card-text "><small>Capstone Project</small></p>
-                          <p class="card-text">A comprehensive ERP system with online donation capabilities, tailored for managing multiple branches and enhancing organizational efficiency.</p>
-                          <span class="badge text-bg-secondary px-3">HTML</span>
-                          <span class="badge text-bg-secondary px-3">CSS</span>
-                          <span class="badge text-bg-secondary px-3">JAVASCRIPT</span>
-                          <span class="badge text-bg-secondary px-3">BOOTSTRAP</span>
-                          <span class="badge text-bg-secondary px-3">PHP</span>
-                          <span class="badge text-bg-secondary px-3">MYSQL</span>
-                          <span class="badge text-bg-secondary px-3">JQUERY</span>
+            <div class="row gy-4">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3>Quality Assurance Tester Specialist</h3>
+                            <span class="badge bg-primary">SEPT 2024 - NOV 2024</span>
                         </div>
-                      </div>
+                        <h4 class="text-muted">IT PRIME SOLUTIONS PROVIDER CORPORATION</h4>
+                        <p>Collaborated with developers to track and resolve defects. Recorded issues and worked with developers to fix them.</p>
                     </div>
-                  </div>
-              </a>
-            </div>
-            <!-- dj -->
-            <div class="col-sm-10 mb-5" data-aos="fade-up" data-aos-duration="3000">
-              <a type="button" href="https://github.com/macolpo/ecommerce-medical" target="_blank" class="text-decoration-none hvr-glow">
-                <div class="card rounded-0 shadow-lg" style="max-width: 100%;">
-                  <div class="row g-0">
-                    <div class="col-xl-6 col-lg-12 col-md-12 img-hover-zoom">
-                      <img src="img/djmed.png" class="img-fluid w-100">
-                    </div>
-                    <div class="col-xl-6 col-lg-12 col-md-12">
-                      <div class="card-body">
-                        <h5 class="card-title text-primary fw-semibold">DJ Medical & Laboratory Supplies Shop</h5>
-                        <p class="card-text "><small>Commissioned Project</small></p>
-                        <p class="card-text">An e-commerce platform for ordering medical supplies online, featuring secure payment using Paymongo processing and order tracking.</p>
-                        <span class="badge text-bg-secondary px-3">HTML</span>
-                        <span class="badge text-bg-secondary px-3">CSS</span>
-                        <span class="badge text-bg-secondary px-3">JAVASCRIPT</span>
-                        <span class="badge text-bg-secondary px-3">BOOTSTRAP</span>
-                        <span class="badge text-bg-secondary px-3">PHP</span>
-                        <span class="badge text-bg-secondary px-3">MYSQL</span>
-                        <span class="badge text-bg-secondary px-3">JQUERY</span>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-              </a>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="experience-card">
+                        <div class="experience-header">
+                            <h3>Junior Programmer Intern</h3>
+                            <span class="badge bg-primary">APR 2024 - JULY 2024</span>
+                        </div>
+                        <h4 class="text-muted">HRWEB INC.</h4>
+                        <p>Assisted in coding and maintaining front-end and back-end features of their in-house system using HTML, CSS, JavaScript, and PHP CodeIgniter.</p>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
     </section>
 
-    <!-- capstone  Modal -->
-    <div class="modal fade" id="staticCapstone" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content bg-transparent border border-0">
-          <div class="modal-header border border-0">
-            <a type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></a>
-          </div>
-          <div class="modal-body">
-              <div id="carouselExampleIndicators" class="carousel slide">
-                <div class="carousel-indicators" id="carousel-indicators">
-                  <!-- Buttons will be dynamically added here -->
-                </div>
-                <div class="carousel-inner" id="carousel-items">
-                  <!-- Carousel items (images) will be dynamically added here -->
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="visually-hidden">Next</span>
-                </button>
-                
-              </div>
+    <!-- About Section -->
+    <section id="about" class="section-padding bg-light">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>About Me</h2>
+                <p class="text-muted">Get to know me better</p>
+            </div>
             
-          </div>
+            <div class="row">
+                <div class="col-lg-4 mb-4 mb-lg-0 " data-aos="fade-right">
+                    <div class="sticky-top" style="top: 100px; z-index: 1020;">
+                        <img src="img/togame.jpg" alt="About Michael" class="img-fluid rounded-3 shadow">
+                    </div>
+                </div>
+                
+                <div class="col-lg-8" data-aos="fade-right">
+                    <h3 class="mb-3">Michael Robert Dellosa</h3>
+                    <p class="lead">I'm a graduate of the National College of Science and Technology with a Bachelor's degree in Information Technology.</p>
+                    
+                    <p>I'm passionate about developing innovative solutions and have experience in various programming languages and frameworks. I was honored with the award for <a href="#" data-bs-toggle="modal" data-bs-target="#thesisModal">Best in Thesis</a> for my capstone project.</p>
+                    
+                    <p>During my internship at HRWeb Inc, I contributed to developing, assisted in database management, and collaborated with teams to improve system performance and user experience.</p>
+                    
+                    <div class="skills-section mt-5">
+                        <h4 class="mb-4">Technical Skills</h4>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+                                <img src="img/html.png" alt="HTML">
+                                <span>HTML</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/css.png" alt="CSS">
+                                <span>CSS</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/javascript.png" alt="JavaScript">
+                                <span>JavaScript</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/bootstrap.png" alt="Bootstrap">
+                                <span>Bootstrap</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/jquery.png" alt="jQuery">
+                                <span>jQuery</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/php.png" alt="PHP">
+                                <span>PHP</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/laravel.png" alt="Laravel">
+                                <span>Laravel</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/codeigniter.png" alt="CodeIgniter">
+                                <span>CodeIgniter</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/wp.png" alt="WordPress">
+                                <span>WordPress</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/mysql.png" alt="MySQL">
+                                <span>MySQL</span>
+                            </div>
+                            
+                            <div class="skill-item">
+                                <img src="img/git.png" alt="Git">
+                                <span>Git</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/github.png" alt="GitHub">
+                                <span>GitHub</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/postman.png" alt="Postman">
+                                <span>Postman</span>
+                            </div>
+                            <div class="skill-item">
+                                <img src="img/powerbi.png" alt="Power BI">
+                                <span>Power BI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
+    </section>
+    <!-- thesis modal -->
+    <div class="modal fade" id="thesisModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+        <div class="modal-content bg-transparent border border-0">
+            <div class="modal-header border border-0">
+            <a type="button" class="btn-close btn-white" data-bs-dismiss="modal" aria-label="Close"></a>
+            </div>
+            <div class="modal-body">
+            <div class="text-center">
+                <img src="img/reward.png" alt="" class="img-fluid col-lg-10 col-md-12">
+            </div>
+            </div>
+        </div>
+        </div>
     </div>
-    
-    <!-- back to top -->
-    <div id="backtotop" style="display: none;">
-      <a href="#" class="btn bg-secondary-subtle shadow-lg rounded-circle px-4 py-3 position-fixed" style="bottom: 20px; right: 20px;">
-          <i class="bi bi-arrow-up"></i>
-      </a>
+   
+
+    <!-- Projects Section -->
+    <section id="projects" class="section-padding">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <h2>My Projects</h2>
+                <p class="text-muted">Some of my recent work</p>
+            </div>
+            
+            <div class="row gy-4">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/thesis.png" alt="ERP Software" class="img-fluid">
+                            <div class="project-overlay">
+                                <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticCapstone">
+                                    View Details
+                                </button>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>ERP Software for SOS Children's Village</h3>
+                            <p>A comprehensive ERP system with online donation capabilities</p>
+                            <div class="project-tags">
+                                <span class="badge text-bg-secondary px-3">HTML</span>
+                                <span class="badge text-bg-secondary px-3">CSS</span>
+                                <span class="badge text-bg-secondary px-3">JAVASCRIPT</span>
+                                <span class="badge text-bg-secondary px-3">BOOTSTRAP</span>
+                                <span class="badge text-bg-secondary px-3">PHP</span>
+                                <span class="badge text-bg-secondary px-3">MYSQL</span>
+                                <span class="badge text-bg-secondary px-3">JQUERY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <img src="img/djmed.png" alt="DJ Medical" class="img-fluid">
+                            <div class="project-overlay">
+                                <a href="https://github.com/macolpo/ecommerce-medical" target="_blank" class="btn btn-outline-light">
+                                    View Project
+                                </a>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>DJ Medical & Laboratory Supplies Shop</h3>
+                            <p>E-commerce platform for medical supplies</p>
+                            <div class="project-tags">
+                                <span class="badge text-bg-secondary px-3">HTML</span>
+                                <span class="badge text-bg-secondary px-3">CSS</span>
+                                <span class="badge text-bg-secondary px-3">JAVASCRIPT</span>
+                                <span class="badge text-bg-secondary px-3">BOOTSTRAP</span>
+                                <span class="badge text-bg-secondary px-3">PHP</span>
+                                <span class="badge text-bg-secondary px-3">MYSQL</span>
+                                <span class="badge text-bg-secondary px-3">JQUERY</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <!-- modal -->
+    <div class="modal fade" id="staticCapstone" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+    <div class="modal-content bg-transparent border border-0">
+        <div class="modal-header border border-0">
+        <a type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></a>
+        </div>
+        <div class="modal-body">
+            <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators" id="carousel-indicators">
+                <!-- Buttons will be dynamically added here -->
+            </div>
+            <div class="carousel-inner" id="carousel-items">
+                <!-- Carousel items (images) will be dynamically added here -->
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            
+            </div>
+        
+        </div>
     </div>
-  
+    </div>
+    </div>
 
 
-    <footer class="text-center shadow-lg bg-body-secondary">
-      <div class="container pt-4">
-        <section class="mb-4">
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-body m-1 hvr-float"
-            href="https://www.facebook.com/macolpo "
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="bi bi-facebook"></i
-          ></a>
-          <!-- Instagram -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-body m-1 hvr-float"
-            href="https://www.instagram.com/macolzxc/"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="bi bi-instagram"></i
-          ></a>
-    
-          <!-- Linkedin -->
-          <a
-            data-mdb-ripple-init
-            class="btn btn-link btn-floating btn-lg text-body m-1 hvr-float"
-            href="https://www.linkedin.com/in/michael-robert-dellosa-208129300/"
-            role="button"
-            data-mdb-ripple-color="dark"
-            ><i class="bi bi-linkedin"></i
-          ></a>
 
-           <!-- email -->
-           <a
-           data-mdb-ripple-init
-           class="btn btn-link btn-floating btn-lg text-body m-1 hvr-float"
-           href="mailto:michaelrobertdellosa118@gmail.com"
-           role="button"
-           data-mdb-ripple-color="dark"
-           ><i class="bi bi-envelope-fill"></i
-         ></a>
-        </section>
-        <!-- Section: Social media -->
-      </div>
-      <!-- Grid container -->
-    
-      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.05);">
-        © Michael Robert D.
-      </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-5">
+        <div class="container">
+            <div class="d-flex justify-content-center row">
+                <div class="col-md-8 col-12 mb-4 mb-lg-0">
+                    <h3 class="mb-3">Michael Robert Dellosa</h3>
+                    <p>Aspiring Software Developer from Dasmariñas City, Cavite, Philippines.</p>
+                </div>
+                
+                <div class="col-md-4 col-12 mb-3">
+                    <h4 class="mb-3">Connect</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/macolpo" target="_blank"><i class="bi bi-facebook"></i></a>
+                        <a href="https://github.com/macolpo" target="_blank"><i class="bi bi-github"></i></a>
+                        <a href="https://www.linkedin.com/in/michael-robert-dellosa-208129300/" target="_blank"><i class="bi bi-linkedin"></i></a>
+                        <a href="mailto:michaelrobertdellosa118@gmail.com"><i class="bi bi-envelope-fill"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <hr class="my-4">
+            
+            <div class="text-center">
+                <p class="mb-0">&copy; 2024 Michael Robert Dellosa. All rights reserved.</p>
+            </div>
+        </div>
     </footer>
-    
-    
 
-    <!-- bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop"><i class="bi bi-arrow-up"></i></a>
 
+   
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-
     <script src="script.js"></script>
-  </body>
+</body>
 </html>
