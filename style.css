@@ -166,7 +166,6 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
 }
 
 /* Skills Grid */
@@ -359,4 +358,28 @@ a {
     .skills-grid {
         grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
     }
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+  .carousel-item img {
+    max-width: 100%;
+    height: 35vh;
+  }
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #939393; 
+    border-radius: 90%; 
+    padding: 20px;
+    width: 30px; 
+    height: 30px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+  .carousel-item img {
+    max-width: 90%;
+    height: 65vh;
+  }
 }
