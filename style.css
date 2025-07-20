@@ -109,6 +109,7 @@ a {
     width: 350px;
     height: 350px;
     margin: 0 auto;
+    animation: bounce 5s ease-in-out infinite;
 }
 
 .profile-image {
@@ -382,4 +383,13 @@ a {
     max-width: 90%;
     height: 65vh;
   }
+}
+
+@keyframes bounce {
+   0%, 100% {
+        transform: translateY(0) scale(1);
+      }
+      50% {
+        transform: translateY(-20px) scale(1.02);
+      }
 }
