@@ -62,9 +62,9 @@ a {
 }
 
 /* Navigation */
-#navbar {
+/* #navbar {
   transition: all 0.8s ease-in-out;
-}
+} */
 
 .navbar-nav .nav-item .nav-link {
   position: relative; 
@@ -74,11 +74,11 @@ a {
 
 .navbar-nav .nav-item .nav-link.active {
   font-weight: bold;
-  color: red;
+  color: var(--secondary);
 }
 
 .nav-link:hover {
-  color: red;
+  color: var(--secondary);
 }
 
 .navbar-nav .nav-item .nav-link::after {
@@ -88,7 +88,7 @@ a {
   height: 2px;
   bottom: 0;
   left: 0; 
-  background: red;
+  background: var(--secondary);
   transition: width 0.3s ease-in-out;
 }
 
