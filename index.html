@@ -261,9 +261,12 @@
                         <div class="project-image">
                             <img src="img/djmed.png" alt="DJ Medical" class="img-fluid">
                             <div class="project-overlay">
-                                <a href="https://github.com/macolpo/ecommerce-medical" target="_blank" class="btn btn-outline-light">
+                                <!-- <a href="https://github.com/macolpo/ecommerce-medical" target="_blank" class="btn btn-outline-light">
                                     View Project
-                                </a>
+                                </a> -->
+                                <button class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#staticMedical">
+                                    View Details
+                                </button>
                             </div>
                         </div>
                         <div class="project-info">
@@ -303,7 +306,7 @@
         </div>
     </div>
 
-    <!--profject modal -->
+    <!--capstone modal -->
     <div class="modal fade" id="staticCapstone" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog modal-xl">
     <div class="modal-content bg-transparent border border-0">
@@ -333,6 +336,37 @@
     </div>
     </div>
     </div>
+
+    <!--medical modal -->
+    <div class="modal fade" id="staticMedical" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl">
+            <div class="modal-content bg-transparent border border-0">
+                <div class="modal-header border border-0">
+                    <a type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></a>
+                </div>
+                <div class="modal-body">
+                    <div id="carouselMedicalIndicators" class="carousel slide">
+                        <div class="carousel-indicators" id="medical-carousel-indicators">
+                            <!-- Buttons will be dynamically added here -->
+                        </div>
+                        <div class="carousel-inner" id="medical-carousel-items">
+                            <!-- Carousel items (images) will be dynamically added here -->
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselMedicalIndicators" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselMedicalIndicators" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
 
 
 

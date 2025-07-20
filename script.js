@@ -59,4 +59,63 @@ $(document).ready(function() {
 
         carouselIndicators.appendChild(button);
     }
+
+    const medicalCarouselItems = document.getElementById("medical-carousel-items");
+    const medicalCarouselIndicators = document.getElementById("medical-carousel-indicators");
+
+    const medicalImages = [
+        'dcategory.png',
+        'dorders.png',
+        'dordersarrived.png',
+        'dordersupdate.png',
+        'dordersupdate1.png',
+        'dproduct.png',
+        'homeabout.png',
+        'homecontact.png',
+        'homelogin.png',
+        'homepage.png',
+        'homepage1.png',
+        'homeproduct.png',
+        'homeproductdetails.png',
+        'homeregister.png',
+        'paymongoapi.png',
+        'paymongolink.png',
+        'userabouttoaddcart.png',
+        'useraddcart.png',
+        'usercart.png',
+        'usercartview.png',
+        'userpayment.png',
+        'userpaymentconfirm.png',
+        'userpaymentprocess.png',
+        'userpaymentsuccess.png',
+        'userprofile.png',
+        'userprofilestatusorder.png'
+    ];
+
+    medicalImages.forEach((image, i) => {
+        const item = document.createElement("div");
+        item.className = "carousel-item" + (i === 0 ? " active" : "");
+
+        const img = document.createElement("img");
+        img.src = `img/medical/${image}`;
+        img.className = "d-block col-lg-9 col-md-9 mx-auto";
+        img.alt = `Slide ${i + 1}`;
+
+        item.appendChild(img);
+        medicalCarouselItems.appendChild(item);
+
+        const indicator = document.createElement("button");
+        indicator.type = "button";
+        indicator.setAttribute("data-bs-target", "#carouselMedicalIndicators");
+        indicator.setAttribute("data-bs-slide-to", i);
+        indicator.setAttribute("aria-label", `Slide ${i + 1}`);
+        if (i === 0) {
+            indicator.classList.add("active");
+            indicator.setAttribute("aria-current", "true");
+        }
+
+        medicalCarouselIndicators.appendChild(indicator);
+    });
+
+
 });
