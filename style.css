@@ -62,9 +62,9 @@ a {
 }
 
 /* Navigation */
-/* #navbar {
+#navbar {
   transition: all 0.8s ease-in-out;
-} */
+}
 
 .navbar-nav .nav-item .nav-link {
   position: relative; 
@@ -154,9 +154,6 @@ a {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-[data-bs-theme="dark"] .experience-card {
-    background: #1e1e1e;
-}
 
 .experience-card:hover {
     transform: translateY(-5px);
@@ -255,10 +252,6 @@ a {
 .project-info {
     padding: 1.5rem;
     background: white;
-}
-
-[data-bs-theme="dark"] .project-info {
-    background: #1e1e1e;
 }
 
 .project-tags {
